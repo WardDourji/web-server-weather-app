@@ -30,7 +30,7 @@ header {
 
 header a{
     text-decoration: none;
-    color: #888888
+    color: #888888;
 }
 header li{
     display: inline;
