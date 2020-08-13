@@ -9,6 +9,7 @@ const foreCast = require('../utils/forecast')
 const viewsPath = path.join(__dirname, '../views/views') // path for new views directory name
 const partialsPath = path.join(__dirname, '../views/partials')
 const publicDirectoryPath = path.join(__dirname, '../public') //static pages
+const port = process.env.PORT || 3000
 
 const app = express()
 
@@ -84,6 +85,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log("the server is up")
+app.listen(port, () => {
+    console.log("the server is up " + port)
 })
